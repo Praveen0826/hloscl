@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function Switchtheme() {
-    const [isDarkMode, setIsDarkMode] = useState(() => {
-        // Check the user's preferred theme on initial load
-        return localStorage.getItem("theme") === "dark";
-    });
+function Switchtheme({ isDarkMode, setIsDarkMode }) {
 
     useEffect(() => {
         // Apply the theme class to the HTML root

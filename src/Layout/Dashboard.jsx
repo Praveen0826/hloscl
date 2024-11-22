@@ -3,44 +3,49 @@ import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
 
 function Dashboard() {
-    const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const sidebarRef = useRef(null);
+    const [isDarkMode, setIsDarkMode] = useState(() => {
+        // Check the user's preferred theme on initial load
+        return localStorage.getItem("theme") === "dark";
+    });
 
     const toggleSidebar = () => {
-        setSidebarOpen(!sidebarOpen);
+        setIsSidebarOpen(!isSidebarOpen);
     };
 
     const closeSidebar = () => {
-        setSidebarOpen(false);
+        setIsSidebarOpen(false);
     };
 
     // Close sidebar on outside click
-    useEffect(() => {
-        const handleOutsideClick = (event) => {
-            if (
-                sidebarOpen &&
-                sidebarRef.current &&
-                !sidebarRef.current.contains(event.target)
-            ) {
-                closeSidebar();
-            }
-        };
+    // useEffect(() => {
+    //     const handleOutsideClick = (event) => {
+    //         if (
+    //             isSidebarOpen &&
+    //             sidebarRef.current &&
+    //             !sidebarRef.current.contains(event.target)
+    //         ) {
+    //             closeSidebar();
+    //         }
+    //     };
 
-        document.addEventListener('mousedown', handleOutsideClick);
-        return () => {
-            document.removeEventListener('mousedown', handleOutsideClick);
-        };
-    }, [sidebarOpen]);
+    //     document.addEventListener('mousedown', handleOutsideClick);
+    //     return () => {
+    //         document.removeEventListener('mousedown', handleOutsideClick);
+    //     };
+    // }, [isSidebarOpen]);
+
 
     return (
         <div className="min-h-screen bg-gray-100 dark:bg-[#121212] text-gray-900 dark:text-white relative">
             {/* Sidebar */}
-            <Sidebar sidebarOpen={sidebarOpen} sidebarRef={sidebarRef} />
+            <Sidebar closeSidebar={closeSidebar} sidebarOpen={isSidebarOpen} sidebarRef={sidebarRef} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
             {/* Main Content */}
             <div className="md:pl-64 flex flex-col">
                 {/* Header */}
-                <Header toggleSidebar={toggleSidebar} />
+                <Header isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} toggleSidebar={toggleSidebar} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
             </div>
         </div>
     );

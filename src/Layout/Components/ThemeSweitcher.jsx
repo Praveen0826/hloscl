@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-function ThemeSwitcher() {
-    const [isDarkMode, setIsDarkMode] = useState(() => {
-        // Check the user's preferred theme on initial load
-        return localStorage.getItem("theme") === "dark";
-    });
+function ThemeSwitcher({ isDarkMode, setIsDarkMode }) {
+
 
     useEffect(() => {
         // Apply the theme class to the HTML root
@@ -22,7 +19,7 @@ function ThemeSwitcher() {
             <button
                 onClick={() => setIsDarkMode(!isDarkMode)}
                 aria-label="Toggle Theme"
-                className="hover:bg-gray-100 dark:hover:bg-[#121212] p-2 rounded-lg flex items-center gap-2 w-full"
+                className="hover:bg-gray-100 dark:hover:bg-[#121212] px-2 py-4 rounded-lg flex items-center gap-2 w-full"
             >
                 {isDarkMode ? (
                     <>
