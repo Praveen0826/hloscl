@@ -11,10 +11,12 @@ function Sidebar({ sidebarOpen, isDarkMode, setIsDarkMode, closeSidebar }) {
 
             <div className="space-y-8">
 
-                <div className='flex gap-2 items-center'>
-                    <img src={Logo} alt="Logo" className='w-12 -translate-y-1' />
-                    <div className='text-2xl font-bold'> HloSkl</div>
-                </div>
+                <Link>
+                    <div className='flex gap-2 items-center'>
+                        <img src={Logo} alt="Logo" className='w-12 -translate-y-1' />
+                        <div className='text-2xl font-bold'> HloSkl</div>
+                    </div>
+                </Link>
 
                 <div className="flex justify-between flex-col h-[85vh]">
                     <div className='flex flex-col gap-1 font-semibold'>
