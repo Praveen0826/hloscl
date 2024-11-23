@@ -31,13 +31,19 @@ function Header({ toggleSidebar, isDarkMode, setIsDarkMode, isSidebarOpen, setIs
         <header className="bg-white dark:bg-[#1f1f1f] p-4 h-16 flex justify-between items-center z-10">
             <div className="relative px-2 w-[100%] flex justify-between items-center">
                 <div>
-                    <div className="font-semibold">Dashboard</div>
+                    <Link>
+                        <div className="font-semibold">Dashboard</div>
+                    </Link>
                     <div className="text-sm flex items-center gap-1">
-                        Home
+                        <Link className='hover:text-blue-700'>
+                            Home
+                        </Link>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-3">
                             <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                         </svg>
-                        sample page
+                        <Link className='hover:text-blue-700'>
+                            sample page
+                        </Link>
                     </div>
                 </div>
 
@@ -54,16 +60,16 @@ function Header({ toggleSidebar, isDarkMode, setIsDarkMode, isSidebarOpen, setIs
 
 
                     <Link>
-                    <div className="hidden md:flex hover:bg-gray-100 dark:hover:bg-[#121212] px-2 rounded-lg gap-2 items-center">
-                        <img src={Profile} alt="Profile" className="size-7 rounded-full" />
-                        <div>
-                            <h1 className="font-semibold text-gray-700 dark:text-white">Abi Nandhan</h1>
-                            <p className="-translate-y-1 text-sm">Basic plan</p>
+                        <div className="hidden md:flex hover:bg-gray-100 dark:hover:bg-[#121212] px-2 rounded-lg gap-2 items-center">
+                            <img src={Profile} alt="Profile" className="size-7 rounded-full" />
+                            <div>
+                                <h1 className="font-semibold text-gray-700 dark:text-white">Abi Nandhan</h1>
+                                <p className="-translate-y-1 text-sm w-28 overflow-hidden">abi@nexcap.com</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 ml-9">
+                                <path fillRule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clipRule="evenodd" />
+                            </svg>
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 ml-9">
-                            <path fillRule="evenodd" d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" clipRule="evenodd" />
-                        </svg>
-                    </div>
                     </Link>
                 </div>
             </div>
