@@ -14,7 +14,7 @@ function Aboutus() {
 
             <h1 className='text-3xl'>About Us</h1>
 
-            <div className='bg-white rounded-lg py-5 dark:bg-[#1f1f1f] md:h-[75vh] h-full mt-4 flex flex-col items-center'>
+            <div className='rounded-lg py-5 dark:bg-[#1f1f1f] md:h-[75vh] h-full mt-4 flex flex-col items-center'>
 
                 <img src={Hlosclsvg} alt="HloScl_Logo" className='w-36 rounded-full dark:border border-gray-700 bg-gray-100 dark:bg-transparent' />
                 <div className='text-3xl mt-2 font-semibold'> HLOSCL </div>
