@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
+import { Outlet } from 'react-router-dom';
 
 function Dashboard() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -46,6 +47,9 @@ function Dashboard() {
             <div className="md:pl-64 flex flex-col">
                 {/* Header */}
                 <Header isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} toggleSidebar={toggleSidebar} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+            </div>
+            <div className='md:pl-64'>
+                <Outlet />
             </div>
         </div>
     );
