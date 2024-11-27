@@ -18,6 +18,7 @@ function Aboutus() {
 
                 <img src={Hlosclsvg} alt="HloScl_Logo" className='w-36 rounded-full bg-gray-100' />
                 <img src={Logotxt} alt="Logo_text" className='w-32 mt-1' />
+                <div className='text-sm text-gray-800'> version 1.0.0 </div>
 
                 <div className='mt-4 md:w-[50%] w-[90%] text-center'>
                     Welcome to Hloskl by Nexcap! We strive to make education management simple and efficient for schools, teachers, students, and parents. Our app is designed to streamline day-to-day school operations, improve communication, and ensure a seamless experience for everyone involved. With Hloskl, managing everything from attendance to exams, homework to fees, is just a few clicks away. Join us in transforming education through technology and innovation.
