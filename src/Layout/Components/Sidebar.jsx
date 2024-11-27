@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../img/Nlogo.png'
+import Logo from '../img/1.png'
 import ThemeSwitcher from './ThemeSweitcher';
 import Profile from '../img/profile.avif'
 import { Link } from 'react-router-dom';
@@ -12,13 +12,12 @@ function Sidebar({ sidebarOpen, isDarkMode, setIsDarkMode, closeSidebar }) {
             <div className="space-y-8">
 
                 <Link>
-                    <div className='flex gap-2 items-center'>
-                        <img src={Logo} alt="Logo" className='w-12 -translate-y-1' />
-                        <div className='text-2xl font-bold'> HloSkl</div>
+                    <div className='flex justify-center items-center'>
+                       <img src={Logo} alt="Logo" className='w-36' />
                     </div>
                 </Link>
 
-                <div className="flex justify-between flex-col h-[85vh]">
+                <div className="flex justify-between flex-col h-[80vh]">
                     <div className='flex flex-col gap-1 font-semibold'>
 
                         <div className='text-sm text-gray-500'>Menu</div>
