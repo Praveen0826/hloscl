@@ -3,5 +3,16 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Adjust if your app is in a subdirectory, e.g., '/subdir/'
+  server: {
+    // Fallback to `index.html` for SPA routes during development
+    historyApiFallback: true,
+  },
+  build: {
+    // Ensure proper SPA behavior in production
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 });
