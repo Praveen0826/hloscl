@@ -39,7 +39,7 @@ function Dashboard() {
 
 
     return (
-        <div className="min-h-screen bg-gray-100 dark:bg-[#121212] text-gray-900 dark:text-white relative">
+        <div className="min-h-screen bg-white dark:bg-[#121212] text-gray-900 dark:text-white relative">
             {/* Sidebar */}
             <Sidebar closeSidebar={closeSidebar} sidebarOpen={isSidebarOpen} sidebarRef={sidebarRef} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
