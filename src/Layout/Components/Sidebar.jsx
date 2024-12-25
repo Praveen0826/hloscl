@@ -3,6 +3,7 @@ import Logo from '../img/1.png'
 import ThemeSwitcher from './ThemeSweitcher';
 import Profile from '../img/profile.avif'
 import { Link } from 'react-router-dom';
+import Settings from '../../Pages/Settings/Settings';
 
 function Sidebar({ sidebarOpen, isDarkMode, setIsDarkMode, closeSidebar }) {
     return (
@@ -81,7 +82,7 @@ function Sidebar({ sidebarOpen, isDarkMode, setIsDarkMode, closeSidebar }) {
                         </Link>
 
                         {/* Settings  */}
-                        <Link>
+                        <Link to={'/Setting'}>
                             <div className='hover:bg-gray-100 dark:hover:bg-[#121212] px-2 py-4 rounded-lg flex items-center gap-2'>
 
                                 <div className='h-5'>
