@@ -7,7 +7,7 @@ function Profilesertting() {
     <div className='bg-[#f9f9fb] dark:bg-[#1f1f1f]'>
       <div className='flex justify-between border-t border-l-0 border items-center border-slate-200 py-4'>
         <div className=''> <h1 className='ml-5 font-bold text-lg'>Profile settings</h1>
-          <p className='ml-5 text-sm text-slate-600 mb-4 dark:text-slate-300'>About some information about the security setting</p></div>
+          <p className='ml-5 text-sm text-slate-600 mb-1 dark:text-slate-300'>About some information about the security setting</p></div>
         <div className=' flex  mr-7 justify-center items-center gap-3'>
           <div><button className='px-3 py-2 bg-slate-200 text-[#515b73] text-sm rounded-lg font-bold'>Cancel</button></div>
           <div><button className='px-3 py-2 bg-[#506ee4] text-white rounded-lg text-sm font-bold'>Save</button></div>
