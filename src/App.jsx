@@ -15,11 +15,11 @@ function App() {
       <Router>
         <Routes>
 
-          <Route path="/" element={<Dashboard />}>
+          <Route path="/dash" element={<Dashboard />}>
 
             <Route path="/about" element={<Aboutus />} />
             <Route path="/adminprofile" element={<Adminprofile />} />
-            <Route path="/Setting" element={<Settings />} > 
+            <Route path="/" element={<Settings />} > 
             <Route path="/Setting/Profilesertting" element={<Profilesertting />} />
             <Route path="/Setting/Securitysettings" element={<Securitysettings />} />
             <Route path="/Setting/Accountsetting" element={<Accountsetting />} />
