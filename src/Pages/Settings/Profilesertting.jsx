@@ -4,7 +4,7 @@ import DragAndDropPhotoWithLink from "./DragandDrop"
 
 function Profilesertting() {
   return (
-    <div className='bg-[#f9f9fb] dark:bg-[#1f1f1f]'>
+    <div className='bg-[#fafafd] dark:bg-[#1f1f1f]'>
       <div className='flex flex-col md:flex-row justify-between border-t border-b-1 border-l-0 border items-center border-slate-200 py-4'>
         <div className=''>
            <h1 className='md:ml-5 font-bold  md:text-lg'>Profile settings</h1>
@@ -15,7 +15,7 @@ function Profilesertting() {
         </div>
       </div>
 
-      <div className='w-full flex-wrap flex bg-[#f9f9fb]  dark:bg-[#1f1f1f]'>
+      <div className='w-full flex-wrap flex bg-[#fafafd]  dark:bg-[#1f1f1f]'>
         <div className=' md:w-[70%] w-full '>
           <div className=''>
         <div className=' flex py-3 md:mx-5 mx-3 border  border-r border-b  border-slate-100 mt-5 shadow-md bg-[#ffffff] dark:bg-[#1f1f1f]'>
