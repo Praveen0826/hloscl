@@ -50,7 +50,7 @@ function DragAndDropPhotoWithLink() {
   return (
     <div className="flex mt-5  items-center justify-center mx-5 ">
       <div
-        className=" border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center cursor-pointer text-gray-600 text-center px-12 py-4"
+        className=" border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center cursor-pointer text-gray-600 text-center px-5 py-4"
         onDrop={handleDrop}
         onDragOver={handleDragOver}
         onClick={handleLinkClick}
@@ -67,7 +67,7 @@ function DragAndDropPhotoWithLink() {
               onClick={handleLinkClick}
               className="text-blue-500 font-bold  hover:text-blue-700  text-xs no-underline"
             >
-              Click to Upload <span className="text-black font-normal text-sm dark:text-white">or drag and drop</span>
+              Click to Upload <span className="text-black font-normal text-xs dark:text-white">or drag and drop</span>
             </button>
             <p className="text-xs text-black dark:text-white">JPG and PNG</p>
             <p className="text-xs text-black dark:text-white">(Max 450 px)</p>

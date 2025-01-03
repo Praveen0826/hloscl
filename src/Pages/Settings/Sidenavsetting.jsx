@@ -10,9 +10,9 @@ function Sidenavsetting() {
   };
   return (
     <div>
-      <div className='flex bg-[#f9f9fb] dark:bg-[#1f1f1f]'>
+      <div className='flex flex-wrap w-full bg-[#f9f9fb] dark:bg-[#1f1f1f]'>
 
-        <div className="w-[18%] h-[90vh] border border-b-0 border-l-0  border-gray-200 ">
+        <div className=" md:w-[18%] w-full  md:h-[90vh] border border-b-0 border-l-0 border-gray-200 ">
           {/* <ul className='pt-6'>
              
               <Link to="Profilesertting">
@@ -29,7 +29,7 @@ function Sidenavsetting() {
               </li>
               </Link>
                 </ul> */}
-          <ul className="pt-6">
+          <ul className="pt-6 ">
           <Link to="Profilesertting">
             <li
               onClick={() => handleActive("Profile Setting")}
@@ -81,7 +81,7 @@ function Sidenavsetting() {
         </ul>
 
         </div>
-        <div className="w-[82%]">
+        <div className="md:w-[82%] w-full">
           <Outlet />
         </div>
 
