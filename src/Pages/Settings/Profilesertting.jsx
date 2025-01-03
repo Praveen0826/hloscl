@@ -20,7 +20,7 @@ function Profilesertting() {
           <div className=''>
         <div className=' flex py-3 md:mx-5 mx-3 border  border-r border-b-0  border-slate-100 mt-5 shadow-md bg-[#ffffff] dark:bg-[#1f1f1f]'>
 
-          <h1 className='pl-4 font-bold text-lg  bg-[#fbfbfd] dark:bg-[#1f1f1f] '>Personal Information</h1>
+          <h1 className='pl-4 font-bold text-lg  bg-[#ffffff] dark:bg-[#1f1f1f] '>Personal Information</h1>
 
         </div>
 
