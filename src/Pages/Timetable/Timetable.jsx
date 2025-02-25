@@ -560,7 +560,6 @@ function Timetable() {
                                 <FaRegClock />
                                 <h1>10:30-11-00 Am</h1>
                             </div>
-
                     </div>
                
                 </div>
