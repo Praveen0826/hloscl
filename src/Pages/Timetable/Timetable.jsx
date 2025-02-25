@@ -11,17 +11,18 @@ function Timetable() {
 
             <div className='border border-t-0 md:mx-5 mx-3 pt-5 px-5 gap-4 shadow-md bg-[#ffffff] dark:bg-[#1f1f1f] '>
 
-                <div className="flex justify-around text-sm font-bold">
-                    <h1>Monday</h1>
-                    <h1>Tuesday</h1>
-                    <h1>Wednesday</h1>
-                    <h1>Thursday</h1>
-                    <h1>Friday</h1>
-                    <h1>Saturday</h1>
+                <div className="flex justify-around   ">
+                    
+                    
+                   
+                  
+                  
+                   
                 </div>
                 <div className="flex ">
 
-                    <div>
+                    <div  className="">
+                    <h1 className="ml-4 text-base font-bold">Monday</h1>
                         <div className="bg-[#e6f9ff] w-44 h-32 mx-3 p-4 my-6 rounded-md">
                             <div className="flex text-sm text-[#6a7287]  items-center gap-2">
                                 <FaRegClock />
@@ -110,6 +111,7 @@ function Timetable() {
                     </div>
 
                     <div>
+                    <h1  className="ml-4 text-base font-bold">Tuesday</h1>
                         <div className="bg-[#e6f9ff] w-44 h-32 mx-3 p-4 my-6 rounded-md">
                             <div className="flex text-sm text-[#6a7287]  items-center gap-2">
                                 <FaRegClock />
@@ -197,6 +199,7 @@ function Timetable() {
 
                     </div>
                     <div>
+                    <h1  className="ml-4 text-base font-bold">Wednesday</h1>
                         <div className="bg-[#f2f5ff] w-44 h-32 mx-3 p-4 my-6 rounded-md">
                             <div className="flex text-sm text-[#6a7287]  items-center gap-2">
                                 <FaRegClock />
@@ -284,6 +287,7 @@ function Timetable() {
 
                     </div>
                     <div>
+                    <h1 className="ml-4 text-base font-bold">Thursday</h1>
                         <div className="bg-[#fef8ea] w-44 h-32 mx-3 p-4 my-6 rounded-md">
                             <div className="flex text-sm text-[#6a7287]  items-center gap-2">
                                 <FaRegClock />
@@ -371,6 +375,7 @@ function Timetable() {
 
                     </div>
                     <div>
+                    <h1 className="ml-4 text-base font-bold">Friday</h1>
                         <div className="bg-[#fde9ed] w-44 h-32 mx-3 p-4 my-6 rounded-md">
                             <div className="flex text-sm text-[#6a7287]  items-center gap-2">
                                 <FaRegClock />
@@ -458,6 +463,7 @@ function Timetable() {
 
                     </div>
                     <div>
+                    <h1 className=" ml-4 text-base font-bold">Saturday</h1>
                         <div className="bg-[#fde9ed] w-44 h-32 mx-3 p-4 my-6 rounded-md">
                             <div className="flex text-sm text-[#6a7287]  items-center gap-2">
                                 <FaRegClock />
@@ -548,8 +554,8 @@ function Timetable() {
                 </div>
                 <div className="flex pb-8">
                 <div className='border md:mr-4 w-80 mx-3  h-24 rounded-md border-slate-200 pb-4 bg-[#ffffff] dark:bg-[#1f1f1f]'>
-                    <div className=" flex items-center flex-col">
-                    <div className="text-white bg-[#3d5ee1]  text-sm px-2 py-1 font-bold rounded-md mt-6">Morning Break</div>
+                    <div className=" flex  flex-col">
+                    <div className="text-white bg-[#3d5ee1] mr-44 ml-5  text-sm px-2 py-1 font-bold rounded-md mt-6"> Morning Break</div>
                      <div className="flex text-sm text-[#6a7287] mt-2 pl-4  items-center gap-2">
                                 <FaRegClock />
                                 <h1>10:30-11-00 Am</h1>
@@ -559,9 +565,9 @@ function Timetable() {
                
                 </div>
                 <div className='border md:mr-4  mx-3 w-56 h-24 rounded-md border-slate-200 pb-4 bg-[#ffffff] dark:bg-[#1f1f1f]'>
-                    <div className=" flex items-center flex-col">
-                    <div className="text-white bg-[#eab300]  text-sm  px-2 py-1  rounded-md mt-6 font-bold">Lunch</div>
-                     <div className="flex text-sm text-[#6a7287] mt-2   items-center gap-2">
+                    <div className=" flex  flex-col">
+                    <div className="text-white bg-[#eab300]  text-sm mr-36 ml-5 px-2 py-1  rounded-md mt-6 font-bold">Lunch</div>
+                     <div className="flex text-sm text-[#6a7287] mt-2 ml-4   items-center gap-2">
                                 <FaRegClock />
                                 <h1>12:30-01-30 Am</h1>
                             </div>
@@ -570,9 +576,9 @@ function Timetable() {
                
                 </div>
                 <div className='border md:mr-4  mx-3  w-56 h-24 rounded-md border-slate-200 pb-4 bg-[#ffffff] dark:bg-[#1f1f1f]'>
-                    <div className=" flex items-center flex-col">
-                    <div className="text-white bg-[#3d5ee1]  text-sm  px-2 py-1 text-center font-bold rounded-md mt-6">Evening Break</div>
-                     <div className="flex text-sm text-[#6a7287] mt-2 justify-center  items-center gap-2">
+                    <div className=" flex  flex-col">
+                    <div className="text-white bg-[#3d5ee1]  text-sm mr-20 ml-4 px-1 py-1 text-center font-bold rounded-md mt-6">Evening Break</div>
+                     <div className="flex text-sm text-[#6a7287] mt-2 ml-4  items-center gap-2">
                                 <FaRegClock />
                                 <h1>03:00-03-45 Am</h1>
                             </div>
