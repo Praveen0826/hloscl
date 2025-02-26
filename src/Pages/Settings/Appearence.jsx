@@ -3,7 +3,7 @@
 // import { MdDarkMode } from "react-icons/md"; 
 // import { MdWbSunny } from "react-icons/md";
 // import { FaMoon } from "react-icons/fa";
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 function Appearence() {
