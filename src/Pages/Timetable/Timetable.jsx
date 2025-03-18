@@ -488,15 +488,15 @@ function Timetable() {
                             </div>
 
                         </div>
-                        <div className="bg-[#e8f9e8] w-44 h-32  my-6 mx-3 p-4 rounded-md">
+                        <div className="bg-[#fde9ed] w-44 h-32 my-6 mx-3 p-4 rounded-md">
                             <div className="flex text-sm text-[#6a7287]  items-center gap-2">
                                 <FaRegClock />
                                 <h1>09:00-09-45 Am</h1>
                             </div>
-                            <h1 className=" text-sm mt-1">Subject: computer Science</h1>
+                            <h1 className=" text-sm mt-1">Subject: PT</h1>
                             <div className="bg-white rounded p-0.5 mt-5 flex gap-2 items-center">
                                 <img src={teacherimg} alt="" height="15px" width="25px" className="rounded-md" />
-                                <h1 className="text-[#6a7287]">RIO</h1>
+                                <h1 className="text-[#6a7287]">Monica</h1>
                             </div>
 
                         </div>
@@ -529,7 +529,7 @@ function Timetable() {
                                 <FaRegClock />
                                 <h1>09:00-09-45 Am</h1>
                             </div>
-                            <h1 className=" text-sm mt-1">Subject: Tamik</h1>
+                            <h1 className=" text-sm mt-1">Subject: Tamil</h1>
                             <div className="bg-white rounded p-0.5 mt-5 flex gap-2 items-center">
                                 <img src={teacherimg} alt="" height="15px" width="25px" className="rounded-md" />
                                 <h1 className="text-[#6a7287]">Nairobi</h1>
